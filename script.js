@@ -3,6 +3,7 @@ const get_ip = document.querySelector("#get-ip");
 const ipLat = document.querySelector("#ip-lat");
 const ipLog = document.querySelector("#ip-log");
 const ipCity = document.querySelector("#ip-city");
+//ninad
 const ipRegion = document.querySelector("#ip-region");
 const ipOrg = document.querySelector("#ip-org");
 const timeZone = document.querySelector("#timezone");
@@ -32,6 +33,7 @@ get_ip.addEventListener("click", () => {
       ipRegion.innerText += data.region;
       ipOrg.innerText += data.org;
       const corrdinates = data.loc.split(",");
+    //ninad
       ipLat.innerText += corrdinates[0];
       ipLog.innerText += corrdinates[1];
 
@@ -61,6 +63,7 @@ get_ip.addEventListener("click", () => {
         .then((response) => response.json())
         .then((data) => {
           message.innerText = data[0].Message;
+        //ninad
         });
 
       // Here returning the postal code so that can get the all the postal details in the next fetch chain
