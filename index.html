@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get IP Address</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>My Public ip Address</h1>
+    <div id="big_div">
+      <div id="container">
+        <div class="wrapper">
+          <div>
+            <label>Ip Address</label>
+            <p id="ip-address"></p>
+          </div>
+
+          <div>
+            <label>Ip Lat:</label>
+            <p id="ip-lat"></p>
+          </div>
+          <div>
+            <label>Ip Log:</label>
+
+            <p id="ip-log"></p>
+          </div>
+          <div>
+            <label>Ip City:</label>
+
+            <p id="ip-city"></p>
+          </div>
+          <div>
+            <label>Ip Region </label>
+
+            <p id="ip-region"></p>
+          </div>
+          <div>
+            <label>Ip Organization:</label>
+
+            <p id="ip-org"></p>
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
+      <div class="mini-div">
+        <label>Time zone:</label>
+        <p id="timezone"></p>
+        <br />
+        <label>Date and Time:</label>
+        <p id="dateandtime"></p>
+        <br />
+        <label>Pincode:</label>
+        <p id="pincode"></p>
+        <br />
+        <label>Message:</label>
+        <p id="Message"></p>
+      </div>
+      <div id="pincodeData"></div>
+    </div>
+    <button id="get-ip">Get IP Address</button>
+    <script src="script.js"></script>
+  </body>
+</html>
