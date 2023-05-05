@@ -12,19 +12,7 @@ const pincodeData = document.getElementById("pincodeData");
 const message = document.getElementById("Message");
 
 get_ip.addEventListener("click", () => {
-  let count = 0;
-  if (count > 0) {
-    ipAddress.innerHTML = text;
-    console.log("hellow");
-    // ipLat;
-    // ipLog;
-    // ipCity;
-    // ipRegion;
-    // ipOrg;
-    // timeZone;
-    // dateAndTime;
-    // pincode;
-  }
+  
   document.getElementById("big_div").style.display = "block";
   // fetching the IP from the api
   fetch("https://api64.ipify.org?format=json")
@@ -101,7 +89,7 @@ get_ip.addEventListener("click", () => {
             pincodeData.appendChild(card);
           });
         });
-      count++;
+        
     });
 });
 
